@@ -9,5 +9,6 @@ execute at @s if score #D4 030-tnt-count matches 1000.. run tellraw @a[distance=
 execute if score #D4 030-tnt-count matches 1000.. run tag @e[type=armor_stand,tag=030-D4] remove loading
 execute if score #D4 030-tnt-count matches 1000.. run kill @s
 
+execute at @s if entity @s[y=255,dy=0] run function tnt-summon:calc/define/calc_black/done
+
 execute at @s unless block ~ ~ ~ air run tp ~ ~1 ~
-# execute at @s if entity @s[y=256] run function tnt-summon:calc/define/calc_black/done
