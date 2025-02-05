@@ -1,4 +1,4 @@
 kill @e[tag=030-D1-fake]
-scoreboard players reset #D1 030-tnt-count
+scoreboard players set #D1 030-tnt-count 0
 
 function tnt-summon:calc/define/clear/done
